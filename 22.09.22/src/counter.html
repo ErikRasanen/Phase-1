@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="counter-increment">Increment</button>
+      <button id="counter-decrement">Decrement</button>
+
+      <p id="counter-value">0</p>
+    </div>
+
+    <script>
+      let button = document.getElementById('counter-increment');
+      let button2 = document.getElementById('counter-decrement');
+      let display = document.getElementById('counter-value');
+      let count = 0;
+      button.addEventListener('click', () => {
+      if (count <= 9){
+        count++
+        display.innerHTML = count;
+      }  
+      });
+      button2.addEventListener('click', () => {
+      if (count >= 1){
+        count--
+        display.innerHTML = count;
+      }   
+      });
+
+    
+  </script>
+  </body>
+</html>
+
+<!-- let button = document.getElementById('counter-increment');
+      let button2 = document.getElementById('counter-decrement');
+      let display = document.getElementById('counter-value');
+      let count = 0;
+      button.addEventListener('click', () => {
+      if (count <= 9){
+        count++
+        display.innerHTML = count;
+      }  
+      });
+      button2.addEventListener('click', () => {
+      if (count >= 1){
+        count--
+        display.innerHTML = count;
+      }   
+      });
+      
+-->
